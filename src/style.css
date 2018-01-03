@@ -5,15 +5,14 @@ body{
 
 .game-board{
     display: grid;
-    grid-template: repeat(3, 1fr)/ repeat(3, 1fr);;
-    border: 1px solid red;
+    grid-template: repeat(3, 1fr)/ repeat(3, 1fr);
     width: 600px;
     height:600px;
     margin: 0  auto;
 }
 
 .box{
-    border: 1px solid blue;
+    border: 1px solid #eaeaea;
     display: flex;
     justify-content: center;
     align-items: center;
