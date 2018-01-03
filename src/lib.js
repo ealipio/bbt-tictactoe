@@ -1,5 +1,5 @@
 "use strict";
 
-const helloMessage = 'Hello I am a message from lib file.';
+const helloMessage = 'I check the console, Eisson';
 
 export default helloMessage;
