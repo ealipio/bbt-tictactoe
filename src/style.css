@@ -5,7 +5,6 @@ body{
 
 .game-board{
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template: repeat(3, 1fr)/ repeat(3, 1fr);;
     border: 1px solid red;
 }
