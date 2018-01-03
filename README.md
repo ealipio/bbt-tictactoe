@@ -5,7 +5,7 @@
 This is the material I used for give a talk at Belatrix Peru about the minimax algorithm and a litle tic-tac-toe game using a raspberry pi and the implementation of Minimax algorithm. For the near future I was thinking in upload the same but using different kinds of algorithms.
 I hope you enjoy :)
 
-## Instalation
+## Installation
 clone the repositorio a inside the folder run this commands ( you should have nodejs and parcel-bundler installed )
 
 `npm install `
