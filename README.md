@@ -9,6 +9,7 @@ I hope you enjoy :)
 clone the repositorio a inside the folder run this commands ( you should have nodejs and parcel-bundler installed )
 
 `npm install `
+
 `parcel ./index.html -p 8080`
 
 then open your browser and go to jhttp://localhost:8080 that is all.
