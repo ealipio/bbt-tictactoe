@@ -1,6 +1,8 @@
 "use strict";
 
 import helloMessage from './lib';
+import animationHanlder from './mo';
+
 const css = `font-size: 20px; 
 font-weight: bold; 
 -webkit-text-fill-color: transparent; 
