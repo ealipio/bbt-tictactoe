@@ -6,10 +6,15 @@ This is the material I used for give a talk at Belatrix Peru about the minimax a
 I hope you enjoy :)
 
 ## Installation
-clone the repositorio a inside the folder run this commands ( you should have nodejs and parcel-bundler installed )
+clone the repositorio a inside the folder run this commands ( you should have nodejs installed )
 
 `npm install `
 
-`parcel ./index.html -p 8080`
+`npm run start`
 
-then open your browser and go to jhttp://localhost:8080 that is all.
+then open your browser and go to http://localhost:8080 
+
+that is all.
+
+
+![](https://img.memecdn.com/tic-tac-toe_o_233195.jpg)
