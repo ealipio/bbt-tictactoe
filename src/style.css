@@ -26,4 +26,9 @@ body, html {
     justify-content: center;
     align-items: center;
     font-size: 4em;
+    cursor: pointer;
+}
+
+.box:hover{
+    background: rgba(14, 57, 65, 0.47);
 }
