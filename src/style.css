@@ -29,6 +29,19 @@ body, html {
     cursor: pointer;
 }
 
+#id0,#id2,#id6,#id8 {
+    border:none;
+}
+#id3, #id5{
+    border-left: none;
+    border-right: none;
+}
+
+#id1, #id7{
+    border-top: none;
+    border-bottom: none;
+}
+
 .box:hover{
     background: rgba(14, 57, 65, 0.47);
 }
