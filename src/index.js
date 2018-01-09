@@ -2,6 +2,10 @@
 
 import helloMessage from './lib';
 import animationHanlder from './mo';
+//import {secondaryShape, basicShape} from './shape';
+
+//secondaryShape.play();
+//basicShape.play();
 
 const css = `font-size: 20px; 
 font-weight: bold; 
