@@ -1,7 +1,7 @@
 "use strict";
 
 import helloMessage from './lib';
-//import animationHanlder from './mo';
+import animationHanlder from './mo';
 //import {secondaryShape, basicShape} from './shape';
 import {myBurst} from './burst';
 

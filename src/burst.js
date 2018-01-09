@@ -3,15 +3,15 @@
  */
 
 export const myBurst = new mojs.Burst({
-    count: 20,
+    count: 10,
     radius: { 50: 150 },
     angle: { 0: 180 },
     children: {
         shape:"polygon",
-        fill:{"red": "yellow"},
-        duration: 5000,
+        fill:["red","green","blue","yellow","white", "peru"],
+        duration: 3000,
         radius: 10,
-        delay:"stagger(50)"
+        delay:"stagger(100)"
     }
 });
 
