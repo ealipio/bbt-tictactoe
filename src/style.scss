@@ -1,0 +1,57 @@
+$from-color: rgba(42,61,69,1);
+$to-color: rgba(43,123,160,1);
+
+@mixin background($from, $to){
+    background: rgb(42,61,69); /* Old browsers */
+    background: -moz-linear-gradient(top,  $from 0%, $to 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  $from 0%,$to 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  $from 0%,$to 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */    
+}
+
+body, html {
+    @include background($from-color, $to-color);
+    width: 100vw;
+    height: 100vh;
+    font-family: "Rubik", sans-serif;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.03em;
+    overflow: hidden;
+  }
+  
+.game-board{
+    display: grid;
+    grid-template: repeat(3, 1fr)/ repeat(3, 1fr);
+    width: 600px;
+    height:600px;
+    margin: 0  auto;
+    box-shadow: 10px 10px 50px #000;
+    text-shadow: 10px 10px 10px #000;
+}
+
+.box{
+    border: 1px solid #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    cursor: pointer;
+    &:hover {background: rgba(23, 216, 81, 0.47);}
+}
+
+#id0,#id2,#id6,#id8 {
+    border:none;
+}
+#id3, #id5{
+    border:{
+        left: none;
+        right: none;
+    }
+}
+
+#id1, #id7{
+    border:{
+        top: none;
+        bottom: none;
+    }
+}

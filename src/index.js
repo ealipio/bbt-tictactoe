@@ -3,7 +3,7 @@
 import helloMessage from './lib';
 import animationHanlder from './mo';
 //import {secondaryShape, basicShape} from './shape';
-import {myBurst} from './burst';
+//import {myBurst} from './burst';
 
 //secondaryShape.play();
 //basicShape.play();
