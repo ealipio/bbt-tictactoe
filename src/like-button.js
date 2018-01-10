@@ -56,4 +56,10 @@ timeline.add(heart, burst);
 elem.addEventListener("click", function(e) {
     this.classList.add("hidden");
     timeline.replay();
-})
+});
+
+/**
+ * All this stuffs I learned in this tutorial
+ * https://webdesign.tutsplus.com/tutorials/introduction-to-mojs-motion-for-the-web--cms-28389
+ * 
+ */
