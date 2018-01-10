@@ -26,7 +26,7 @@ var sad = new mojs.Shape({
     scale: { 0: 2.5 },
     easing: "elastic.out",
     duration: 1500,
-    delay: 300,
+    delay: 200,
     radius: 10
 });
 
@@ -35,7 +35,7 @@ const burst = new mojs.Burst({
     radius: {5: 40},
     angle:45,
     count: 15,
-    timeline: {delay:300},
+    timeline: {delay:150},
     children: {
         radius: 5.5,
         fill: "#39cfaf",

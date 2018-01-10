@@ -9,7 +9,7 @@ var huPlayer = "P";
 var aiPlayer = "C";
 var iter = 0;
 var round = 0;
-var aiCo = "white";
+var aiCo = "transparent";
 var huCo = "#333";
 
 export function move(element, player = huPlayer, color = huCo) {
@@ -36,7 +36,7 @@ export function move(element, player = huPlayer, color = huCo) {
         } else {
             round++;
             var index = minimax(board, aiPlayer).index;
-            //document.getElementById(index).style.backgroundColor = aiCo;
+            document.getElementById(index).style.backgroundColor = aiCo;
             document.getElementById(index).textContent = "0";;
             board[index] = aiPlayer;
             if (winning(board, aiPlayer)) {
