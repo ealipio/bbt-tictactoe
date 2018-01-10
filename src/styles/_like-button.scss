@@ -1,0 +1,30 @@
+@mixin no-select() {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+  }
+
+.like-button{
+    @include no-select();
+    position: absolute;
+    top:50%;
+    left:10%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    font:{
+        size:30px;
+    };
+    border: none;
+    background: transparent;
+    color: #999;
+    transition: all, .2 ease-out;
+    &.hidden{
+        font-size: 0;
+    }
+    &:focus{
+        outline: none;
+    }
+}

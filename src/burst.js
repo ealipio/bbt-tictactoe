@@ -15,7 +15,4 @@ export const myBurst = new mojs.Burst({
     }
 });
 
-document.addEventListener("click", () => {
-    //myBurst.play();
-    myBurst.replay();
-})
+document.getElementsByClassName("game-board")[0].addEventListener("click", () => { myBurst.replay();});
