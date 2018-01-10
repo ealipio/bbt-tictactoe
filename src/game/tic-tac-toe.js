@@ -1,39 +1,9 @@
-import timeline from '../face';
-import sadTimeline from '../sad';
+import timeline from '../mojs/face';
+import sadTimeline from '../mojs/sad';
+import matchTimeline from '../mojs/match';
 
 "use strict";
 
-/**
-$(document).ready(function() {
-    $(".dots").click(function() {
-      $(".guys, p").css("visibility", "hidden");
-      $("td").css("visibility", "visible");
-      aiCo = "#333";
-      huCo = "white";
-      console.log("white");
-    });
-    $(".dots2").click(function() {
-      $(".guys, p").css("visibility", "hidden");
-      $("td").css("visibility", "visible");
-      console.log("black");
-    });
-  
-    $("td").click(function() {
-      move(this, huPlayer, huCo);
-      console.log("clicked");
-    });
-  });
-*/
-
-/**
-var elem = document.querySelector(".box");
-
-elem.addEventListener("click", function (e) {
-    move(this, huPlayer, huCo);
-    console.log("clicked");
-});
-
- */
 var board = [0, 1, 2, 3, 4, 5, 6, 7, 8];
 var huPlayer = "P";
 var aiPlayer = "C";
@@ -43,44 +13,36 @@ var aiCo = "white";
 var huCo = "#333";
 
 export function move(element, player = huPlayer, color = huCo) {
-    console.log("element" + element.id);
-    if (board[element.id] != "P" && board[element.id] != "C") {
+    if (board[element.id] != "P" && board[element.id] != "C" && !winning(board, "C") ) {
         round++;
-        debugger;
-
         element.style.backgroundColor = color;
+        element.textContent = "X";
         board[element.id] = player;
-        console.log(board);
-
         if (winning(board, player)) {
             setTimeout(function () {
+                // Winner!
                 document.querySelector(".like-button").classList.add("hidden");
-                timeline.replay();                
-                //alert("YOU WIN");
-                //reset();
+                timeline.replay();
             }, 500);
             return;
         } else if (round > 8) {
             setTimeout(function () {
-                alert("TIE");
+                // empate
+                document.querySelector(".like-button").classList.add("hidden");
+                matchTimeline.replay();                
                 //reset();
             }, 500);
             return;
         } else {
             round++;
             var index = minimax(board, aiPlayer).index;
-            //var selector = "#" + index;
-            //$(selector).css("background-color", aiCo);
-            document.getElementById(index).style.backgroundColor = aiCo;
+            //document.getElementById(index).style.backgroundColor = aiCo;
+            document.getElementById(index).textContent = "0";;
             board[index] = aiPlayer;
-            console.log(board);
-            console.log(index);
             if (winning(board, aiPlayer)) {
                 setTimeout(function () {
                     document.querySelector(".like-button").classList.add("hidden");
-                    //sadTimeline.replay();
-                    timeline.replay();
-                    //alert("YOU LOSE");
+                    sadTimeline.replay();
                     //reset();
                 }, 500);
                 return;
@@ -92,6 +54,8 @@ export function move(element, player = huPlayer, color = huCo) {
                 return;
             }
         }
+    } else if(winning(board, "C")){
+        sadTimeline.replay();
     }
 }
 

@@ -10,9 +10,8 @@
 .like-button{
     @include no-select();
     position: absolute;
-    top:50%;
+    top:30%;
     left:10%;
-    cursor: pointer;
     transform: translate(-50%, -50%);
     font:{
         size:30px;
