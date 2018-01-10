@@ -18,6 +18,14 @@ that is all.
 
 
 ![](https://img.memecdn.com/tic-tac-toe_o_233195.jpg)
+## Support
+
+If you like this project and you want to show your support, you can buy me a beer with ![magic internet money](https://i.imgur.com/mScSiOo.jpg?1):
+
+```
+BTC: 1ELKub9YNCMrXgR7bV3px8FEpK6RzV5SRx
+
+```
 
 
 ## License
