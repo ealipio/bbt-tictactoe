@@ -1,0 +1,81 @@
+.like-button {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome and Opera */
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  border: none;
+  background: transparent;
+  color: #999;
+  transition: all, .2 ease-out; }
+  .like-button.hidden {
+    font-size: 0; }
+  .like-button:focus {
+    outline: none; }
+
+body, html {
+  background: #2a3d45;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #2a3d45 0%, #2b7ba0 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #2a3d45 0%, #2b7ba0 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #2a3d45 0%, #2b7ba0 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  width: 100vw;
+  height: 100vh;
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.03em;
+  overflow: hidden; }
+
+.game-board {
+  display: grid;
+  grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+  width: 600px;
+  height: 600px;
+  margin: 0  auto;
+  box-shadow: 10px 10px 50px #000;
+  text-shadow: 10px 10px 10px #000; }
+
+.box {
+  border: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  cursor: pointer; }
+  .box:hover {
+    background: rgba(23, 216, 81, 0.47); }
+
+/**
+#id0,#id2,#id6,#id8 {
+    border:none;
+}
+#id3, #id5{
+    border:{
+        left: none;
+        right: none;
+    }
+}
+
+#id1, #id7{
+    border:{
+        top: none;
+        bottom: none;
+    }
+}
+**/
