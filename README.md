@@ -35,7 +35,7 @@ BTC: 1ELKub9YNCMrXgR7bV3px8FEpK6RzV5SRx
 
 (The MIT License)
 
-Copyright (c) Oleg Solomka [@LegoMushroom](https://twitter.com/legomushroom) [legomushroom@gmail.com](mailto:legomushroom@gmail.com)
+Copyright (c) Eisson Alipio [@ealipior](https://twitter.com/ealipior) [eisson.alipio@gmail.com](mailto:eisson.alipio@gmail.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
